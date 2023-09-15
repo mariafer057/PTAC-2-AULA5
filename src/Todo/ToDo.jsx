@@ -7,11 +7,12 @@ export default function ToDo() {
    const [marca, setMarca ] = useState("");
    const [preco, setPreco ] = useState("");
    const [lista, setLista ] = useState([]);
+   const [imagem, setImagem ] = useState("");
    const [id,setId] = useState(1);
     const salvar =(e) =>{
         e.preventDefault();
         setLista([...lista, {
-                tipo: tipo, marca:marca, preco: preco,
+                tipo: tipo, marca:marca, preco: preco, imagem: imagem,
 
                 id: id
         }]);
@@ -19,18 +20,23 @@ export default function ToDo() {
         setTipo("");
         setMarca("");
         setPreco("");
+        setImagem("");
     };
 
     return (
         <div>
             <Link to="/">home</Link>
-            <h2 class="txt">Shoes mult</h2>    
+            <h2 class="txt">Meus Livrinhos</h2>    
             <form onSubmit={salvar}>
             <input value={tipo} type="text"
             onChange={(e)=>{ setTipo(e.target.value)}}/>
             <input value={marca} type="text"
             onChange={(e)=>{ setMarca(e.target.value)}}/>
             <input value={preco} type="text"
+            onChange={(e)=>{ setPreco(e.target.value)}}/>
+            <input value={imagem} type="text"
+            onChange={(e)=>{ setImagem(e.target.value)}}/>
+             <input value={preco} type="text"
             onChange={(e)=>{ setPreco(e.target.value)}}/>
             <button class="btn btn-success">ADD</button>   
             </form>      

@@ -1,3 +1,7 @@
 body{
     background: linear-gradient(0.25turn, #4169E1   , #87CEFA, #00008B);   
+    color:aliceblue;
+}
+text{
+    color: aliceblue;
 }
