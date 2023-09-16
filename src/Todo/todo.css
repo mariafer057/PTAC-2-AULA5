@@ -2,6 +2,42 @@ body{
     background: linear-gradient(0.25turn, #9408ba   , #e088f9, #4e1e4e);   
     color:aliceblue;
 }
-text{
+.text{
     color: aliceblue;
+}
+.txt-input{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background-image: linear-gradient(to bottom, rgb(57, 22, 212), rgb(164, 13, 69), rgb(218, 25, 102));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.3   ;
+}
+input{
+    width: 20%;
+}
+.btn{
+    background: linear-gradient(to bottom, #e674ea, #a0148e, #4e1e4e);
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    margin: 23px;
+    border-radius: 50px;
+}
+button{
+    background: linear-gradient(to bottom, #e674ea, #a0148e, #4e1e4e);
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin: 25px;
+    border-radius: 90px;
 }
