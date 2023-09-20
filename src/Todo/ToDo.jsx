@@ -55,7 +55,7 @@ export default function ToDo() {
             <input value={preco} type="text"
             onChange={(e)=>{ setPreco(e.target.value)}}/>
            
-           <p className="txt-input"><b>Cole aqui a URL da Img:</b></p>
+           <p className="txt-input"><b>URL da Img:</b></p>
            <input value={imagem} type="text"
             onChange={(e)=>{ setImagem(e.target.value)}}/>
 
