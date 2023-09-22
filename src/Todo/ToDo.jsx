@@ -10,6 +10,7 @@ export default function ToDo() {
    const [imagem, setImagem ] = useState("");
    const [id, setId] = useState(1);
     const salvar =(e) =>{
+        // e.preventDefault(); > previnir o comportamento
         e.preventDefault();
         setLista([...lista, {
                 tipo: tipo, 
@@ -79,3 +80,5 @@ export default function ToDo() {
         </div>
     );
 }
+//map: manipular dados dentro de um array
+//ativ. é o meu parametro
