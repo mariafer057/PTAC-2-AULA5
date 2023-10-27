@@ -9,7 +9,7 @@ export default function ToDo() {
    const [marca, setMarca ] = useState("");
    const [preco, setPreco ] = useState("");
    const [imagem, setImagem ] = useState("");
-   const [id, setId] = useState(1);
+   const [id, setId] = useState(listaLocalStorage[listaLocalStorage.length - 1]?.id + 1 || 1);
 
    useEffect(() => {
     localStorage.setItem("Lista", JSON.stringify(lista));}, [lista]);
@@ -67,8 +67,8 @@ export default function ToDo() {
          
             {lista.map((ativ)=>
             <div key= {ativ.id}>
-
-                <p>Tipo: {ativ.tipo}</p>
+                <Link to={`/detalhe/${ativ.id}`}><p>Tipo: {ativ.tipo}</p>
+</Link>
                 <p>Autor/a:: {ativ.marca}</p>
                 <p>Preço: R${ativ.preco}</p>
                 <p>Imagem:</p>
