@@ -12,6 +12,7 @@ export default function Detalhe(){
         return null
     })
     console.log(ativ[0]);
+    
     return(
        <Card ativ={ativ[0]}></Card>
     );
