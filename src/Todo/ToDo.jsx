@@ -32,10 +32,16 @@ export default function ToDo() {
         console.log(id)
     };
 
-    const remover = (id) => {
-        const auxLista = lista.filter((item) => item.id !== id);
-        setLista(auxLista);
+        
+        
+       /*Remover recebe um ID, filtrando a lista;
+       declarando a function remover, atraves do parametro ID sera usado para identificar o item removido*/ const remover = (id)=> {
+        const AtualizandoLista = lista.filter((item) => item.id !== id);
+        setLista(AtualizandoLista);
       };
+
+
+
 
     return (
         <div class="estilizando">
